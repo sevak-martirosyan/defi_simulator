@@ -1,0 +1,38 @@
+{
+  "name": "defi_simulator",
+  "description": "A set of tools that simulate DeFi protocols with JavaScript.",
+  "version": "1.0.0",
+  "author": "Sevak Martirosyan <sevak707@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sevak-martirosyan/defi_simulator.git"
+  },
+  "keywords": [
+    "defi",
+    "uniswap",
+    "liquidity pool"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "start": "ts-node ./src/run.ts",
+    "test": "jest",
+    "build": "rimraf dist && tsc --build",
+    "publish-local": "yarn build && npm pack"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.11.18",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.25",
+    "typescript": "^4.9.4",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {}
+}
+
